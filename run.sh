@@ -44,6 +44,13 @@ done
 # Run the slurm job after setting the symlink
 ./clean
 ./mk
+# Check if a .lock file is in the current directory, if so, refuse to run because other run is still going on. If not, create .lock file
+if [ -f ".lock" ]; then
+    echo "Another run is still going on. Please wait until it finishes."
+    exit 1
+else
+    touch .lock
+fi
 echo ""
 echo "---------------------"
 echo "Compilation finished."
