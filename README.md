@@ -17,7 +17,6 @@ mkdir INLISTS JOBLOGS LOGS MODELS
 ```
 rmdir INLISTS
 git clone git@github.com:<USERNAME>/<REPONAME>.git INLISTS
-echo "INLISTS/*" >> .gitignore
 ```
 
 ### Usage steps
