@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e # Crash on fail
+
 # if there is a .git directory in INLISTS, pull the latest changes
 if [ -d "INLISTS/.git" ]; then
     cd INLISTS
