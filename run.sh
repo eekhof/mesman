@@ -46,6 +46,10 @@ select index in "${display_files[@]}"; do
         mkdir -p ./RESULTS/"$resultsfolder_name"
         mkdir -p ./RESULTS/"$resultsfolder_name"/LOGS
         mkdir -p ./RESULTS/"$resultsfolder_name"/photos
+        rm -d ./LOGS
+        rm -d ./JOBLOGS
+        rm -d ./MODELS
+        rm -d ./photos
         ln -sf ./RESULTS/"$resultsfolder_name"/LOGS ./LOGS
         ln -sf ./RESULTS/"$resultsfolder_name" ./JOBLOGS
         ln -sf ./RESULTS/"$resultsfolder_name" ./MODELS
