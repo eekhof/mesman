@@ -21,7 +21,7 @@ git clone git@github.com:<USERNAME>/<REPONAME>.git INLISTS
 
 ### Usage steps
 1) Create a MESA inlist file as you would normally with the following constraints:
-    - In the file's `controls` section, set `logs_directory="LOGS/some_descriptive_name"`
+    - In the file's `controls` section, leave the `logs_directory` empty, or set `logs_directory="LOGS"`
     - If loading set the load to `model_filepath="INPUTMODELS/some_descriptive_name"`
     - If saving models, set the savepath to `model_filepath="MODELS/some_descriptive_name"`
     - It must be named differently from all other inlists, e. g. `some_descriptive_name`
