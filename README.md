@@ -10,7 +10,7 @@ Instructions
 ```
 git clone git@github.com:eekhof/mesman.git
 cd mesman
-mkdir INLISTS JOBLOGS LOGS MODELS
+mkdir INLISTS
 ```
 3) Tweak slurm settings in the file `sjobrun.sh` as needed
 4) If you would like to pull and link a remote git repository, run something like:
