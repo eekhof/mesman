@@ -37,6 +37,19 @@ select index in "${display_files[@]}"; do
         echo "You selected: $inlist_file"
         ln -sf "$inlist_file" ./inlist
         echo "Symlink updated: 'inlist' -> '$inlist_file'"
+
+        inlist_name=$(basename "$inlist_file") # Get the name of the inlist file without the path
+        inlist_name=${inlist_name%.in} # Remove the .in extension
+        # Add unix timestamp to the results folder name
+        resultsfolder_name=$inlist_name"_"$(date +%s)
+        # Create symlinks into RESULTS folder
+        mkdir -p ./RESULTS/"$resultsfolder_name"
+        mkdir -p ./RESULTS/"$resultsfolder_name"/LOGS
+        mkdir -p ./RESULTS/"$resultsfolder_name"/photos
+        ln -sf ./RESULTS/"$resultsfolder_name"/LOGS ./LOGS
+        ln -sf ./RESULTS/"$resultsfolder_name" ./JOBLOGS
+        ln -sf ./RESULTS/"$resultsfolder_name" ./MODELS
+        ln -sf ./RESULTS/"$resultsfolder_name"/photos ./photos
         break
     else
         echo "Invalid selection. Please try again."

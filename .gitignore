@@ -1,6 +1,11 @@
 inlist
 star
+make/*
+!make/makefile
 INLISTS
+RESULTS
+.lock
 JOBLOGS
 LOGS
 MODELS
+photos

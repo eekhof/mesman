@@ -38,22 +38,24 @@ All the folders that are written in all caps have some contents related to the r
 2) `LOGS` contains all the log folders
 3) `MODELS` contains all the saved and input models
 
+These are all symlinks to folders located in the `RESULTS` folder, here a folder called `<inlistname>_<unixtimestamp>` is created when each run commences.
+
 
 Possible future features
 ------------------------
 - Support for custom run_star_extras.f90 files
 - Support for multiple inlist files for better organization
     - Both of the above features could be realized e. g. by having folders sitting in the `INLISTS` folder, and copying their contents over to the main folder on demand.
-- Add protection against running a new simulation while the other one is still running
-    - This could be done by checking if the log of the last slurmjob ended cleanly
-- Add confirmation when inlist to be used would overwrite logs folder or model
-- Alternatively automatically add Unix-Timestamp to every logfolder and model name
+- Fix `.lock` file not getting removed automatically when slurmjob is uncleanly terminated
 
 
 TODO
 ----
 - Make the script `run.sh` fail and terminate without submitting slurmjob when compilation with selected inlist fails
-
+- Lock does not yet get removed when slurmjob is terminated instead of finished or crashed
+- Move all slurmlogs, logs and other results to folders whose name matches that of the inlist, that are timetagged, e. g. RESULTS/inlistname_1692300256
+    - Do that by having the runscript initialize symlinks to the results folder with the correct timetag, the inlists always point to LOGS, JOBLOGS, models etc.
+- Remove the filtering commands (tail etc.) in `hooklastlog.sh` and `openlastlog.sh`, redundant because new folderstructure only permits one log per folder anyway
 
 License
 -------
