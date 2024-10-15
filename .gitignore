@@ -4,6 +4,7 @@ make/*
 !make/makefile
 INLISTS
 RESULTS
+INPUTMODELS
 .lock
 JOBLOGS
 LOGS

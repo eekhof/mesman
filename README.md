@@ -10,7 +10,7 @@ Instructions
 ```
 git clone git@github.com:eekhof/mesman.git
 cd mesman
-mkdir INLISTS
+mkdir INLISTS INPUTMODELS
 ```
 3) Tweak slurm settings in the file `sjobrun.sh` as needed
 4) If you would like to pull and link a remote git repository, run something like:
@@ -22,7 +22,8 @@ git clone git@github.com:<USERNAME>/<REPONAME>.git INLISTS
 ### Usage steps
 1) Create a MESA inlist file as you would normally with the following constraints:
     - In the file's `controls` section, set `logs_directory="LOGS/some_descriptive_name"`
-    - If loading or saving models, set the load/savepath to `model_filepath="MODELS/some_descriptive_name"`
+    - If loading set the load to `model_filepath="INPUTMODELS/some_descriptive_name"`
+    - If saving models, set the savepath to `model_filepath="MODELS/some_descriptive_name"`
     - It must be named differently from all other inlists, e. g. `some_descriptive_name`
 2) Place the inlist file in the folder `INLISTS`
     - Version management can be done with git repo in the `INLISTS` folder
@@ -34,11 +35,12 @@ git clone git@github.com:<USERNAME>/<REPONAME>.git INLISTS
 ### Folder overview
 All the folders that are written in all caps have some contents related to the runs.
 1) `INLISTS` contains all the inlist files
-4) `JOBLOGS` contains all the slurm logs
-2) `LOGS` contains all the log folders
-3) `MODELS` contains all the saved and input models
+2) `INPUTMODELS` contains all the saved models
+3) `JOBLOGS` contains all the slurm logs
+4) `LOGS` contains all the log folders
+5) `MODELS` contains all the models to be used as input
 
-These are all symlinks to folders located in the `RESULTS` folder, here a folder called `<inlistname>_<unixtimestamp>` is created when each run commences.
+`JOBLOGS`, `LOGS` and `MODELS` are all symlinks to folders located in the `RESULTS` folder, here a folder called `<inlistname>_<unixtimestamp>` is created when each run commences.
 
 
 Possible future features
