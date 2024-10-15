@@ -55,8 +55,6 @@ TODO
 ----
 - Make the script `run.sh` fail and terminate without submitting slurmjob when compilation with selected inlist fails
 - Lock does not yet get removed when slurmjob is terminated instead of finished or crashed
-- Move all slurmlogs, logs and other results to folders whose name matches that of the inlist, that are timetagged, e. g. RESULTS/inlistname_1692300256
-    - Do that by having the runscript initialize symlinks to the results folder with the correct timetag, the inlists always point to LOGS, JOBLOGS, models etc.
 - Remove the filtering commands (tail etc.) in `hooklastlog.sh` and `openlastlog.sh`, redundant because new folderstructure only permits one log per folder anyway
 
 License
