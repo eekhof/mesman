@@ -24,9 +24,11 @@ git clone git@github.com:<USERNAME>/<REPONAME>.git INLISTS
     - In the file's `controls` section, leave the `logs_directory` empty, or set `logs_directory="LOGS"`
     - If loading set the load to `model_filepath="INPUTMODELS/some_descriptive_name"`
     - If saving models, set the savepath to `model_filepath="MODELS/some_descriptive_name"`
-    - It must be named differently from all other inlists, e. g. `some_descriptive_name`
 2) Place the inlist file in the folder `INLISTS`
+    - To help organize, the inlists can also be placed in a subfolder structure in the `INLISTS` folder
     - Version management can be done with git repo in the `INLISTS` folder
+3) If required, place the model file to be loaded in the folder `INPUTMODELS`
+    - To help organize, the model files can be placed in a subfolder structure in the `MODELS` folder
 3) Execute the script `run.sh` and select the inlist you want to run by entering the corresponding number
 4) Hook into current feed of last slurm log with `hooklastlog.sh`
     - Enter `CTRL+c` to exit
