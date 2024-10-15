@@ -58,6 +58,7 @@ TODO
 - Make the script `run.sh` fail and terminate without submitting slurmjob when compilation with selected inlist fails
 - Lock does not yet get removed when slurmjob is terminated instead of finished or crashed
 - Remove the filtering commands (tail etc.) in `hooklastlog.sh` and `openlastlog.sh`, redundant because new folderstructure only permits one log per folder anyway
+- Add support for more complicate
 
 License
 -------
