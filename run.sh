@@ -47,7 +47,7 @@ select index in "${display_files[@]}"; do
         mkdir -p ./RESULTS/"$resultsfolder_name"/LOGS
         mkdir -p ./RESULTS/"$resultsfolder_name"/photos
         # copy the selected inlist into the results folder
-        cp "$inlist_file " ./RESULTS/"$resultsfolder_name"/"$inlist_name".in
+        cp "$inlist_file" ./RESULTS/"$resultsfolder_name"/"$inlist_name".in
         rm -df ./LOGS
         rm -df ./JOBLOGS
         rm -df ./MODELS
