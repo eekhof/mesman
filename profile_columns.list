@@ -897,7 +897,7 @@
       !  model_number
       ! num_zones
       !  star_age
-      ! time_step
+      time_step
    ! properties at the photosphere
       ! Teff
       ! photosphere_L
