@@ -202,7 +202,7 @@
       !cz_top_logT
       !cz_top_logRho
       !cz_top_logP
-      !cz_top_radius ! Rsun
+      cz_top_radius ! Rsun
       !cz_top_log_column_depth
       !cz_top_log_radial_depth
       !cz_top_luminosity ! Lsun
@@ -368,7 +368,7 @@
 
    !## helium core
       !he_core_mass
-      !he_core_radius
+      he_core_radius
       !he_core_lgT
       !he_core_lgRho
       !he_core_L
@@ -501,7 +501,7 @@
       !luminosity_ergs_s ! luminosity in cgs units
       log_L ! log10 luminosity in Lsun units
       !log_L_ergs_s ! log10 luminosity in cgs units
-      !radius ! Rsun
+      radius ! Rsun
       !log_R ! log10 radius in Rsun units
       !radius_cm
       !log_R_cm
@@ -808,7 +808,7 @@
       !tot_IE_div_IE_plus_KE
       !total_IE_div_IE_plus_KE
 
-      !total_entropy
+      total_entropy
       !total_eps_grav
 
       !total_energy_sources_and_sinks ! for this step
