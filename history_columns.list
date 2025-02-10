@@ -55,7 +55,7 @@
 
    !## timestep
 
-      !time_step ! timestep in years since previous model
+      time_step ! timestep in years since previous model
       !time_step_sec ! timestep in seconds since previous model
       !time_step_days
       !log_dt ! log10 time_step in years

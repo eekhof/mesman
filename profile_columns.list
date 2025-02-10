@@ -80,14 +80,14 @@
    !dmbar_m_div_r
    !log_dmbar_m_div_r
    !mass_grams ! mass coordinate of outer boundary of cell in grams
-   !mmid ! mass at midpoint of cell (average of mass coords of the cell boundaries)  Msun units.
+   mmid ! mass at midpoint of cell (average of mass coords of the cell boundaries)  Msun units.
    
    !m_grav ! total enclosed gravitational mass. Msun units.
    !m_grav_div_m_baryonic ! mass_gravitational/mass at cell boundary
    !mass_correction_factor ! dm_gravitational/dm (dm is baryonic mass of cell)
    
    !xm ! mass exterior to point (Msun units)
-   !dq ! mass of zone as a fraction of total star mass
+   dq ! mass of zone as a fraction of total star mass
    !logxq ! log10(1-q)
    !logxm ! log10(xm)
    
@@ -238,7 +238,7 @@
    !eps_nuc_minus_non_nuc_neu
    !eps_nuc_start
 
-   !eps_nuc ! ergs/g/sec from nuclear reactions (including losses to reaction neutrinos)
+   eps_nuc ! ergs/g/sec from nuclear reactions (including losses to reaction neutrinos)
    !log_abs_eps_nuc
    !d_lnepsnuc_dlnd
    !d_epsnuc_dlnd
@@ -460,7 +460,7 @@
    !grad_density ! smoothed dlnRho/dlnP at cell boundary
    
    !gradL ! gradient for Ledoux criterion for convection
-   !sch_stable ! 1 if grada > gradr, 0 otherwise
+   sch_stable ! 1 if grada > gradr, 0 otherwise
    ledoux_stable ! 1 if gradL > gradr, 0 otherwise
 
    !grada_sub_gradT
