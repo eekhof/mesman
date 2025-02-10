@@ -174,7 +174,7 @@
       !cz_bot_radius ! Rsun
       !cz_log_column_depth
       !cz_log_radial_depth
-      !cz_luminosity ! Lsun
+      cz_luminosity ! Lsun
       !cz_opacity
       !cz_log_tau
       !cz_eta
@@ -205,7 +205,7 @@
       cz_top_radius ! Rsun
       !cz_top_log_column_depth
       !cz_top_log_radial_depth
-      !cz_top_luminosity ! Lsun
+      cz_top_luminosity ! Lsun
       !cz_top_opacity
       !cz_top_log_tau
       !cz_top_eta
@@ -497,7 +497,7 @@
 
    !## conditions at or near the surface of the model (outer edge of outer cell)
 
-      !luminosity ! luminosity in Lsun units
+      luminosity ! luminosity in Lsun units
       !luminosity_ergs_s ! luminosity in cgs units
       log_L ! log10 luminosity in Lsun units
       !log_L_ergs_s ! log10 luminosity in cgs units
