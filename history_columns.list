@@ -809,7 +809,7 @@
       !total_IE_div_IE_plus_KE
 
       total_entropy
-      !total_eps_grav
+      total_eps_grav
 
       !total_energy_sources_and_sinks ! for this step
       !total_nuclear_heating

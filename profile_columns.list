@@ -214,7 +214,7 @@
 
 
 !# Mass accretion
-   !eps_grav ! -T*ds/dt (negative for expansion)
+   eps_grav ! -T*ds/dt (negative for expansion)
    !log_abs_eps_grav_dm_div_L
    !log_abs_v ! log10(abs(velocity)) (cm/s)
    !log_mdot_cs
