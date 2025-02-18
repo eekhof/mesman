@@ -134,7 +134,7 @@
    !logT_bb ! log10(black body temperature) at outer boundary of zone
    !logT_face_div_logT_bb
 
-   !energy ! internal energy (ergs/g)
+   energy ! internal energy (ergs/g)
    !logE ! log10(specific internal energy) at center of zone
    !rho ! density
    !density ! rho

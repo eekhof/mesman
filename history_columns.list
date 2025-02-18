@@ -781,9 +781,9 @@
       !tot_PE
       !log_tot_PE
 
-      !total_internal_energy
+      total_internal_energy
       !log_total_internal_energy
-      !total_internal_energy_after_adjust_mass
+      total_internal_energy_after_adjust_mass
 
       ! shorter versions of above
       !tot_IE
