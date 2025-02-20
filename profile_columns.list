@@ -195,8 +195,8 @@
    !prad_div_pgas_div_L_div_Ledd
    !pressure_scale_height_cm
 
-   !eps_grav_composition_term
-   !eps_grav_plus_eps_mdot
+   eps_grav_composition_term
+   eps_grav_plus_eps_mdot
 
    !chiRho_for_partials
    !chiT_for_partials
@@ -215,23 +215,23 @@
 
 !# Mass accretion
    eps_grav ! -T*ds/dt (negative for expansion)
-   !log_abs_eps_grav_dm_div_L
+   log_abs_eps_grav_dm_div_L
    !log_abs_v ! log10(abs(velocity)) (cm/s)
    !log_mdot_cs
    !log_mdot_v
    !eps_mdot
-   !env_eps_grav
+   env_eps_grav
    !xm_div_delta_m
    !log_xm_div_delta_m
 
 
 !# Nuclear energy generation
-   !signed_log_eps_grav ! sign(eps_grav)*log10(max(1,abs(eps_grav)))
+   signed_log_eps_grav ! sign(eps_grav)*log10(max(1,abs(eps_grav)))
    !signed_log_eps_nuc
    !net_nuclear_energy ! erg/gm/s from nuclear reactions minus all neutrino losses
       ! The value plotted is net_nuclear_energy = sign(val)*log10(max(1,abs(val)))
       ! where val = net nuclear energy minus all neutrino losses.
-   !net_energy ! net_energy + eps_grav.
+   net_energy ! net_energy + eps_grav.
       ! The value plotted is net_energy = sign(val)*log10(max(1,abs(val)))
       ! where val = net nuclear energy plus eps_grav minus all neutrino losses.
    !eps_nuc_plus_nuc_neu
@@ -418,12 +418,12 @@
    !log_cell_ie_div_star_ie
    !log_cell_specific_IE
 
-   !ergs_eps_grav_plus_eps_mdot
+   ergs_eps_grav_plus_eps_mdot
    !ergs_error
    !ergs_error_integral
    !ergs_mdot
    !ergs_rel_error_integral
-   !dm_eps_grav
+   dm_eps_grav
 
    !dE
 
@@ -862,7 +862,7 @@
    !dRhodr_info
    !dRstar_div_dr
    !dr_ratio
-   !dm_eps_grav
+   dm_eps_grav
    !dr_ratio
    !dt_cs_div_dr
    !dt_div_tau_conv

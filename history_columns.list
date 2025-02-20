@@ -255,8 +255,8 @@
 
       !mass_loc_of_max_eps_nuc ! (in Msun units)
       !mass_ext_to_max_eps_nuc ! (in Msun units)
-      !eps_grav_integral ! (in Lsun units)
-      !log_abs_Lgrav ! log10 abs(eps_grav_integral) (in Lsun units)
+      eps_grav_integral ! (in Lsun units)
+      log_abs_Lgrav ! log10 abs(eps_grav_integral) (in Lsun units)
 
    !## information about reactions (by category)
 
@@ -596,7 +596,7 @@
       !center_abar
       !center_zbar
 
-      !center_eps_grav
+      center_eps_grav
 
       !center_non_nuc_neu
       !center_eps_nuc
